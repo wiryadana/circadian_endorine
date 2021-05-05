@@ -1,0 +1,27 @@
+---
+title: "Circadian_Endocrine"
+author: "Kadek Adit Wiryadana"
+date: "5/5/2021"
+output: html_document
+---
+
+## read data
+Data obtained from https://scholar.colorado.edu/concern/parent/w3763771k/file_sets/jw827c68k
+```{r}
+dict <- readxl::read_xlsx("data.xlsx",
+                          sheet = 1
+                  )
+
+analytical <- readxl::read_excel("data.xlsx",
+                            2)
+
+charac <- readxl::read_excel("data.xlsx",
+                            sheet=3)
+
+actigraphy <- readxl::read_excel("data.xlsx",
+                            sheet=4)
+
+nutrition <- readxl::read_excel("data.xlsx",
+                            sheet=5)
+```
+
